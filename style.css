@@ -8,6 +8,10 @@
   background-color: #333333 !important;
 }
 
+.bg-gray-light{
+  background-color: #cdcdcd !important;
+}
+
 .bg-gray-alpha{
   background-color: #333333ca !important;
 }
@@ -22,7 +26,7 @@
 
 .logo{
   background: url("./assets/images/logo.png") no-repeat center center;
-  height: 200px;
+  height: 180px;
   width: 100%;
 }
 
@@ -59,11 +63,6 @@
   padding-bottom: 0 !important;
 }
 
-.carousel-control-prev,
-.carousel-control-next{
-  align-items: flex-end;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
   width: 1.5rem;
@@ -71,9 +70,12 @@
 }
 
 .border-bottom-container{
-  border-bottom: 5px solid #666666;
+  border-bottom: 7px solid #666666;
 }
 
+.card{
+  width: 350px;
+}
 
 @media (max-width: 991px) {
   .navbar{
