@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header {
+  background-image: url("./assets/images/background-logo.jpg");
+  height: 150px;
+}
+
+.navbar{
+    background-color: #333333;
+    height: 30px;
+}
+
+.navbar > div{
+    margin-top: 10px;
+}
+
+.navbar .container-fluid .collapse ul {
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.navbar .container-fluid .collapse ul > li {
+  background: linear-gradient(to right, #222222, #4c4c4c);
+  padding: 0 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar .container-fluid .collapse ul li a {
+  color: #fff;
+}
