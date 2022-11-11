@@ -292,11 +292,14 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a
-                    href="#"
-                    class="border border-dark rounded-pill py-1 px-5 text-decoration-none text-dark"
-                    >Saiba mais</a
+
+                  <button
+                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
                   >
+                    <a href="#" class="text-decoration-none text-dark"
+                      >Saiba mais</a
+                    >
+                  </button>
                 </div>
               </div>
             </div>
@@ -337,11 +340,13 @@
         <div class="d-flex gap-1 justify-content-end flex-column">
           <div>
             <img
+              role="button"
               class="icon-social-media bg-gray py-1 px-1"
               src="assets/images/instagram.svg"
               alt="Logo Instagram"
             />
             <img
+              role="button"
               class="icon-social-media bg-gray py-1 px-1"
               src="assets/images/facebook.svg"
               alt="Logo Facebook"
@@ -359,10 +364,12 @@
             <img
               class="icon-social-media bg-gray py-1 px-1"
               src="assets/images/instagram.svg"
+              role="button"
               alt="Logo Instagram"
             />
             <img
-              class="icon-social-media bg-gray py-1 px-1"
+              class="icon-social-media bg-gray py-1 px-1 cur"
+              role="button"
               src="assets/images/facebook.svg"
               alt="Logo Facebook"
             />
@@ -371,13 +378,13 @@
       </div>
       <div class="col gap-1 list-nav">
         <ul class="text-light list-unstyled">
-          <li>Home</li>
-          <li>Roteiros</li>
-          <li>RDV CC</li>
-          <li>Galeria</li>
-          <li>Blog</li>
-          <li>Sobre</li>
-          <li>Contato</li>
+          <li role="button">Home</li>
+          <li role="button">Roteiros</li>
+          <li role="button">RDV CC</li>
+          <li role="button">Galeria</li>
+          <li role="button">Blog</li>
+          <li role="button">Sobre</li>
+          <li role="button">Contato</li>
         </ul>
       </div>
     </footer>
