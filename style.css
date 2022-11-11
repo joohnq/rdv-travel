@@ -8,6 +8,10 @@
   background-color: #333333 !important;
 }
 
+.bg-black{
+  background-color: #000 !important;
+}
+
 .bg-gray-light{
   background-color: #cdcdcd !important;
 }
@@ -30,17 +34,21 @@
   width: 100%;
 }
 
+.icon-social-media{
+  width: 35px;
+  height: 35px;
+}
+
 .navbar{
   height: 30px;
 }
 
-.position-relative{
-  position: relative;
-  z-index: 2;
-}
-
 .gap-10{
   gap: 10px;
+}
+
+.z-index-2{
+  z-index: 2;
 }
 
 .margin-top-10{
@@ -77,8 +85,13 @@
   width: 350px;
 }
 
+.width-80{
+  width: 80px;
+}
+
 @media (max-width: 991px) {
   .navbar{
     height: 50px;
 }
 }
+
