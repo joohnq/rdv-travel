@@ -9,20 +9,46 @@
   background-color: #333333 !important;
 }
 
-.bg-gray-linearGradient{
-  background: linear-gradient(to right, #2a2a2a, #464646,#484848 ) !important;
+.bg-gray-alpha{
+  background-color: #333333ca !important;
 }
 
 .gap-10{
   gap: 10px;
 }
 
+.max-width-1200{
+  max-width: 1200px;
+}
+
 .margin-top-10{
   margin-top: 10px;
 }
 
+.main-carousel{
+  border-bottom: 5px solid #666666;
+}
+
+.carousel-caption{
+  right: 10%;
+  left: 10%;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+.carousel-caption p{
+  /* font-size: 1.5rem; */
+  /* margin-bottom: 0; */
+  padding: 2px 0;
+}
+
 .header {
-  background-image: url("./assets/images/background-logo.jpg");
+  background-image: url("./assets/images/2022-1811-rdv-franca-web.jpg");
+}
+
+.position-relative{
+  position: relative;
+  z-index: 2;
 }
 
 .navbar{
@@ -31,7 +57,22 @@
 
 .color-yellow-hover a:hover{
   color: #ffbd1a !important;
-  background: linear-gradient(to right, #2a2a2a, #464646,#484848 ) !important;
+}
+
+.btn-yellow-hover li a:hover{
+  color: #ffbd1a !important;
+  background: #333333;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  align-items: flex-end;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (max-width: 991px) {
@@ -48,15 +89,15 @@
 
 @media (max-width: 900px) {
   .logo{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
 
 @media (max-width: 600px) {
   .logo{
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
   }
 }
 

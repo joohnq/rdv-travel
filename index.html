@@ -7,8 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!--Descrição do site-->
+    <meta name="description" content="Descrição do Site">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS e estilo principal-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -19,92 +21,181 @@
     <link rel="stylesheet" href="./style.css" />
     <title>RSV | Travel</title>
   </head>
-  <body>
+  <body class="max-width-1200 mx-auto bg-dark">
     <header class="header w-10">
-        <div class="logo">
-            <img src="assets/images/logo.png" class="w-100 h-100" alt="Logo RDV TRAVEL">
-            <div class="social-medias">
-                <!--LOGO INSTAGRAM-->
-                <!--LOGO FACEBOOK-->
-                <!--LOGO IDIOMA-->
-            </div>
+      <div class="logo">
+        <img
+          src="assets/images/logo.png"
+          class="w-100 h-100"
+          alt="Logo RDV TRAVEL"
+        />
+        <div class="social-medias">
+          <!--LOGO INSTAGRAM-->
+          <!--LOGO FACEBOOK-->
+          <!--LOGO IDIOMA-->
         </div>
+      </div>
 
-        <nav class="navbar navbar-dark navbar-expand-lg bg-gray">
-            <div class="container w-100">
-              <button
-                class="navbar-toggler bg-gray border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark position-relative">
+        <div class="container-fluid">
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon ml-0"></span>
+            </button>
+      
+          <div
+            class="collapse navbar-collapse w-100"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-10">
+              <!--Os LI'S abaixo apresentam uma tag chamada margin-top-10 e gap-10 que são altoexplicativas. OBS: Não foi importada do BootStrap-->
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
               >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-10">
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover">
-                    <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item dropdown bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a
-                      class="nav-link dropdown-toggle text-light"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >HOME</a
+                >
+              </li>
+              <li
+                class="nav-item dropdown bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ROTEIROS
+                </a>
+                <ul
+                  class="dropdown-menu bg-gray p-0 btn-yellow-hover"
+                >
+                  <li class="btn-yellow-hover">
+                    <a class="dropdown-item text-light ps-2 pt-2" href="#"
+                      >L'ÉTAPE BRASIL</a
                     >
-                      ROTEIROS
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light ps-2" href="#"
+                      >SERRA CATARINENSE</a
+                    >
+                  </li>
+                  <li class="btn-yellow-hover">
+                    <a class="dropdown-item text-light ps-2 pb-1" href="#"
+                      >TRAVESSIA DOS ANDES
                     </a>
-                    <ul class="dropdown-menu bg-gray-linearGradient p-0">
-                      <li><a class="dropdown-item text-light ps-2 pt-2" href="#">L'ÉTAPE BRASIL</a></li>
-                      <li><a class="dropdown-item text-light ps-2" href="#">SERRA CATARINENSE</a></li>
-                      <li>
-                        <a class="dropdown-item text-light ps-2 pb-1" href="#">TRAVESSIA DOS ANDES</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a class="nav-link text-light" aria-current="page" href="#">RDVCC</a>
-                  </li>
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a class="nav-link text-light" aria-current="page" href="#">GALERIA</a>
-                  </li>
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a class="nav-link text-light" aria-current="page" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a class="nav-link text-light" aria-current="page" href="#">SOBRE</a>
-                  </li>
-                  <li class="nav-item bg-gray-linearGradient ps-4 pe-4 rounded-bottom margin-top-10">
-                    <a class="nav-link text-light" aria-current="page" href="#">CONTATO</a>
                   </li>
                 </ul>
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >RDVCC</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >GALERIA</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >BLOG</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >SOBRE</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >CONTATO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-1811-rdv-franca-web.jpg" class="d-block w-100 h-100" alt="#">
+              <div class="carousel-caption d-none d-md-block pb-0">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt quidem inventore?</p>
               </div>
             </div>
-          </nav>
-    </header>
-    
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-3889-rdv-franca-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque </p>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-6458-rdv-suica-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae veritatis</p>
+              </div>
+            </div>
+            <div class="carousel-item w-100 active">
+              <img src="assets/images/2022-6618-rdv-suica-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.dawdwa</p>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-7715-rdv-italia-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae veritatis</p>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-8272-rdv-italia-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae veritatis</p>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="assets/images/2022-8896-rdv-italia-web.jpg" class="d-block w-100 h-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="bg-gray-alpha fw-bold mb-0 fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae veritatis</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-gray rounded-circle border border-2 border-white mb-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-gray rounded-circle border border-2 border-white mb-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
 
     <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    
   </body>
 </html>
