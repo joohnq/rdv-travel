@@ -5,31 +5,64 @@
     box-sizing: border-box;
 }
 
+.bg-gray{
+  background-color: #333333 !important;
+}
+
+.bg-gray-linearGradient{
+  background: linear-gradient(to right, #2a2a2a, #464646,#484848 ) !important;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+
 .header {
   background-image: url("./assets/images/background-logo.jpg");
-  height: 150px;
 }
 
 .navbar{
-    background-color: #333333;
     height: 30px;
 }
 
-.navbar > div{
-    margin-top: 10px;
+.color-yellow-hover a:hover{
+  color: #ffbd1a !important;
+  background: linear-gradient(to right, #2a2a2a, #464646,#484848 ) !important;
 }
 
-.navbar .container-fluid .collapse ul {
-  margin: 0 auto;
-  gap: 15px;
+@media (max-width: 991px) {
+  .logo{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .navbar{
+    height: 50px;
+}
 }
 
-.navbar .container-fluid .collapse ul > li {
-  background: linear-gradient(to right, #222222, #4c4c4c);
-  padding: 0 20px;
-  border-radius: 0 0 10px 10px;
+
+@media (max-width: 900px) {
+  .logo{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 }
 
-.navbar .container-fluid .collapse ul li a {
-  color: #fff;
+@media (max-width: 600px) {
+  .logo{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 500px) {
+  .logo{
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+  }
 }
