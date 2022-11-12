@@ -12,6 +12,10 @@
   background-color: #000 !important;
 }
 
+.disable {
+  display: none;
+}
+
 .bg-gray-light {
   background-color: #cdcdcd !important;
 }
@@ -20,18 +24,10 @@
   background-color: #333333ca !important;
 }
 
-.max-width-1200 {
-  max-width: 1200px;
-}
-
-.header {
-  background-image: url("./assets/images/2022-1811-rdv-franca-web.jpg");
-}
-
 .logo {
   background: url("./assets/images/logo.png") no-repeat center center;
-  height: 180px;
-  width: 100%;
+  background-size: cover;
+  height: 300px;
 }
 
 .icon-social-media {
@@ -39,21 +35,38 @@
   height: 35px;
 }
 
-.social-medias-language{
+.social-medias-language {
   bottom: 100px;
-  right: 75px;
+  right: 60px;
 }
 
 .navbar {
   height: 30px;
+  margin-top: -60px;
+}
+
+.navbar-toggler {
+  margin: -400px 20px 0 0;
 }
 
 .gap-10 {
   gap: 10px;
 }
 
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
 .z-index-2 {
   z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
 }
 
 .margin-top-10 {
@@ -94,17 +107,36 @@
   width: 80px;
 }
 
-#carouselCard{
+#carouselCard {
   width: 100%;
   margin: 0 auto;
 }
 
 @media (max-width: 991px) {
-  .navbar-collapse{
-    position: absolute;
-    top: -150px;
+  .logo-menu {
+    display: inline-block;
+    background: url("./assets/images/logo.png") center center no-repeat
+      content-box;
+    background-size: 240%;
+    height: 150px;
+
+    border-bottom: 1px solid black;
   }
-  .social-medias-language{
+
+  .navbar {
+    background: transparent !important;
+
+  }
+
+  .navbar-nav{
+    height: 100vh;
+  }
+
+  .navbar-collapse {
+    margin-top: -250px;
+  }
+
+  .social-medias-language {
     position: static !important;
     display: flex;
     justify-content: flex-end;
@@ -112,27 +144,51 @@
     margin: 10px 20px 0 0;
   }
 
-  .social-medias-language .icon-social-media{
+  .social-medias-language .icon-social-media {
     border: 1px solid #fff;
   }
 
-  .navbar-nav{
+  .navbar-nav {
     width: 80%;
     margin-left: 0 !important;
+  }
+
+  .navbar-toggle{
+    z-index: 3;
   }
 
   .navbar {
     height: 50px;
   }
 
-  .navbar-nav{
-    background-color: #333333;
+  .navbar-nav {
+    background-color: #fff;
     padding: 0 0 10px;
   }
 
-  .dropdown-menu{
+  .nav-item {
+    background-color: #fff !important;
+  }
+
+  .nav-link {
+    color: #000 !important;
+  }
+
+  .dropdown-menu {
     border: 0;
+    background-color: #fff !important;
+  }
+
+  .dropdown-item {
+    color: #000 !important;
+  }
+
+  .dropdown-toggle::selection {
+    color: #000 !important;
+  }
+
+  .dropdown-item:hover {
+    color: #ffbd1a !important;
+    background: #fff !important;
   }
 }
-
-
