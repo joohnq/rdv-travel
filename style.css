@@ -39,6 +39,11 @@
   height: 35px;
 }
 
+.social-medias-language{
+  bottom: 100px;
+  right: 75px;
+}
+
 .navbar {
   height: 30px;
 }
@@ -89,7 +94,29 @@
   width: 80px;
 }
 
+#carouselCard{
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
+  .social-medias-language{
+    position: static !important;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px 20px 0 0;
+  }
+
+  .social-medias-language .icon-social-media{
+    border: 1px solid #fff;
+  }
+
+  .navbar-nav{
+    width: 80%;
+    margin-left: 0 !important;
+  }
+
   .navbar {
     height: 50px;
   }
@@ -103,3 +130,5 @@
     border: 0;
   }
 }
+
+
