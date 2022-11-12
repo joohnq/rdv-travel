@@ -47,7 +47,7 @@
 
 .navbar-toggler {
   margin: 0px 20px 0 0;
-  right: 0;
+  /* right: 0; */
 }
 
 .gap-10 {
@@ -152,7 +152,7 @@
 
   .container-fluid {
     width: 80% !important;
-    margin: 0 0 0 0 !important;
+    margin: 120px 0 0 !important;
   }
 
   .nav-link,
