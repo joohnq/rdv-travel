@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-collapse{
+    position: absolute;
+    top: -150px;
+  }
   .social-medias-language{
     position: static !important;
     display: flex;
