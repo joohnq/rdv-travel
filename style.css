@@ -46,7 +46,8 @@
 }
 
 .navbar-toggler {
-  margin: -400px 20px 0 0;
+  margin: 0px 20px 0 0;
+  right: 0;
 }
 
 .gap-10 {
@@ -135,29 +136,27 @@
     border: 1px solid #fff;
   }
 
-  .navbar-collapse {
-    margin: 0 0 0 0 !important;
-  }
-
-  .navbar-toggle, .nav-item{
+  .navbar-toggle,
+  .nav-item {
     background-color: white !important;
-  }
-
-  .navbar-toggle{
-    right: 0;
   }
 
   .navbar-nav {
     background-color: #fff;
-    padding: 0 0 10px;
   }
 
-  .container-fluid{
-    width: 80%;
-    margin-left: 0;
+  .navbar {
+    width: 100%;
+    background: transparent !important;
   }
 
-  .nav-link, .dropdown-item {
+  .container-fluid {
+    width: 80% !important;
+    margin: 0 0 0 0 !important;
+  }
+
+  .nav-link,
+  .dropdown-item {
     color: #000 !important;
   }
 
