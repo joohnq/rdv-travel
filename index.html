@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!--Descrição do site-->
-    <meta name="description" content="Descrição do Site" />
+    <meta name="description" content="DESCRIÇÃO AQUI" />
 
     <!-- Bootstrap CSS e estilo principal-->
     <link
@@ -22,6 +22,7 @@
     <title>RSV | Travel</title>
   </head>
   <body>
+    <!--CAROUSEL PRINCIPAL COM 100VH-->
     <section>
       <div
         id="mainCarousel"
@@ -123,7 +124,7 @@
                     >
                   </li>
                   <li
-                    class="nav-item social-medias-language position-absolute z-index-1"
+                    class="nav-item social-medias-language position-absolute z-index-1 d-flex align-items-center gap-10"
                   >
                     <img
                       role="button"
@@ -137,12 +138,38 @@
                       src="assets/images/facebook.svg"
                       alt="Logo Facebook"
                     />
-                    <img
-                      role="button"
-                      class="icon-social-media bg-gray py-1 px-1"
-                      src="assets/images/facebook.svg"
-                      alt="Logo Facebook"
-                    />
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-gray border-0"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="padding: 3px 10px;"
+                      >
+                        <img
+                          src="assets/images/brasil-icon.png"
+                          alt="Brasil"
+                          style="width: 30px;"
+                        />
+                      </button>
+                      <ul class="dropdown-menu bg-gray" style="margin-left: -100px">
+                        <li>
+                          <a class="dropdown-item text-light" href="#">
+                            <img
+                              src="assets/images/brasil-icon.png"
+                              alt="Brasil"
+                            />
+                            Portuguese BR
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-light" href="#">
+                            <img src="assets/images/usa.png" alt="USA" />
+                            English US
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -252,28 +279,31 @@
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="prev"
+          style="opacity: 1"
         >
-          <span
-            class="carousel-control-prev-icon bg-gray rounded-circle border border-2 border-white mb-2"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
+          <img
+            class="bg-gray rounded-circle border border-2 border-white mb-2"
+            src="assets/images/arrow-left.png"
+            alt=""
+          />
         </button>
         <button
           class="carousel-control-next align-items-end"
           type="button"
           data-bs-target="#mainCarousel"
           data-bs-slide="next"
+          style="opacity: 1"
         >
-          <span
-            class="carousel-control-next-icon bg-gray rounded-circle border border-2 border-white mb-2"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
+          <img
+            class="bg-gray rounded-circle border border-2 border-white mb-2"
+            src="assets/images/arrow-right.png"
+            alt=""
+          />
         </button>
       </div>
     </section>
 
+    <!--CONTEUDO COM PATROCINADORES E CARD CAROUSEL-->
     <main>
       <section
         class="border-bottom-container pt-3 pb-2 w-100 bg-light text-center"
@@ -290,11 +320,21 @@
         <h2 class="text-center text text-uppercase fs-4 pt-3 pb-3">
           Nossos Roteiros
         </h2>
-        <div class="container">
-          <button class="arrow-left control" aria-label="Previous image">
-            ◀
+        <div class="container-carousel position-relative w-100 mx-auto">
+          <button aria-label="Previous image">
+            <img
+              class="arrow-left control"
+              src="assets/images/arrow-left.png"
+              alt=""
+            />
           </button>
-          <button class="arrow-right control" aria-label="Next Image">▶</button>
+          <button aria-label="Next Image">
+            <img
+              class="arrow-right control"
+              src="assets/images/arrow-right.png"
+              alt=""
+            />
+          </button>
           <div class="gallery-wrapper">
             <div class="gallery">
               <div
@@ -316,34 +356,7 @@
                   </p>
 
                   <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
-                    >
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto item"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
+                    class="border border-dark rounded-pill py-1 px-5 bg-light"
                   >
                     <a href="#" class="text-decoration-none text-dark"
                       >Saiba mais</a
@@ -370,7 +383,7 @@
                   </p>
 
                   <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
+                    class="border border-dark rounded-pill py-1 px-5 bg-light"
                   >
                     <a href="#" class="text-decoration-none text-dark"
                       >Saiba mais</a
@@ -397,34 +410,7 @@
                   </p>
 
                   <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
-                    >
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto item"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
+                    class="border border-dark rounded-pill py-1 px-5 bg-light"
                   >
                     <a href="#" class="text-decoration-none text-dark"
                       >Saiba mais</a
@@ -435,68 +421,10 @@
             </div>
           </div>
         </div>
-
-        <!-- <div id="carouselCard" class="carousel slide w-100 mx-auto" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item">CARD1</div>
-            <div class="carousel-item active">
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-gray-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">Card 3</div>
-          </div>
-          <button
-            class="carousel-control-prev align-items-start"
-            type="button"
-            data-bs-target="#carouselCard"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon bg-gray rounded-circle border border-2 border-white mb-2"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next align-items-start"
-            type="button"
-            data-bs-target="#carouselCard"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon bg-gray rounded-circle border border-2 border-white mb-2"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
       </section>
     </main>
+
+    <!--FOOTER COM ALGUMAS INFORMAÇÕES E UL-->
     <footer class="row bg-black p-3 w-100 mx-auto">
       <div class="d-flex gap-1 col">
         <div>
@@ -556,40 +484,6 @@
 
     <!-- JavaScript -->
     <script src="./assets/js/bootstrap.bundle.js"></script>
-    <script>
-      const controls = document.querySelectorAll(".control");
-      const items = document.querySelectorAll(".item");
-      const maxItems = items.length;
-      let currentItem = 1;
-
-      controls.forEach((control) => {
-        control.addEventListener("click", (e) => {
-          isLeft = e.target.classList.contains("arrow-left");
-
-          if (isLeft) {
-            currentItem -= 1;
-          } else {
-            currentItem += 1;
-          }
-
-          if (currentItem >= maxItems) {
-            currentItem = 0;
-          }
-
-          if (currentItem < 0) {
-            currentItem = maxItems - 1;
-          }
-
-          items.forEach((item) => item.classList.remove("current-item"));
-
-          items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center",
-          });
-
-          items[currentItem].classList.add("current-item");
-        });
-      });
-    </script>
+    <script src="assets/js/carouselCard.js"></script>
   </body>
 </html>
