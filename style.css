@@ -47,7 +47,6 @@
 
 .navbar-toggler {
   margin: 0px 20px 0 0;
-  /* right: 0; */
 }
 
 .gap-10 {
@@ -114,12 +113,20 @@
 }
 
 @media (max-width: 991px) {
+  .header{
+    display: grid !important;
+    grid-template: 
+    "menu"
+    "logo";
+  }
+
   .logo-menu {
     display: inline-block;
     background: url("./assets/images/logo.png") center center no-repeat
       content-box;
     background-size: 240%;
     height: 150px;
+    grid-area: logo;
 
     border-bottom: 1px solid black;
   }
@@ -143,16 +150,21 @@
 
   .navbar-nav {
     background-color: #fff;
+    height: 100vh;
   }
 
   .navbar {
     width: 100%;
     background: transparent !important;
+    grid-area: menu;
+    margin: 0;
   }
 
   .container-fluid {
-    width: 80% !important;
+    width: 80%;
     margin: 120px 0 0 !important;
+    left: 0;
+    top: -120px;
   }
 
   .nav-link,
