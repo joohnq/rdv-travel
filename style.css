@@ -152,6 +152,15 @@ button.dropdown-toggle::after {
   background: url("./assets/images/bg-card.png") no-repeat;
 }
 
+.color-yellow-hover a:hover{
+  color: #e7b223 !important;
+}
+
+.color-yellow-hover-dropdown a:hover{
+  color: #e7b223 !important;
+  background-color: #333333 !important;
+}
+
 @media (min-width: 1100px) {
   .navbar-mobile{
     display: none !important;
@@ -159,20 +168,30 @@ button.dropdown-toggle::after {
 }
 
 @media (max-width: 1100px) {
-  /* .header {
+  .header {
     display: grid !important;
     grid-template:
-      "menu"
+      "menu-mobile"
       "logo";
   }
 
-  .navbar{
+  .navbar-mobile{
     grid-area: menu;
+    background: transparent !important;
+    margin: 20px 20px 0 0;
+  }
+
+  .navbar-toggler{
+    background-color: #fff !important; 
+  }
+
+  .container-fluid{
+    justify-content: flex-end !important;
   }
 
   .logo{
     grid-area: logo;
-  } */
+  }
 
   .navbar-desktop{
     display: none !important;
@@ -185,16 +204,8 @@ button.dropdown-toggle::after {
     width: 100%;
     margin-top: -30px;
   }
-
-  .social-medias-language {
-    position: static !important;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin: 10px 20px 0 0;
-  }
-
-  .social-medias-language .icon-social-media {
-    border: 1px solid #fff;
+  .color-yellow-hover-dropdown a:hover{
+    color: #e7b223 !important;
+    background-color: #fff !important;
   }
 }

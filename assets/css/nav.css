@@ -19,11 +19,3 @@
   .navbar-desktop{
     height: 30px;
   }
-  .color-yellow-hover a:hover{
-    color: #e7b223 !important;
-  }
-
-  .color-yellow-hover-dropdown a:hover{
-    color: #e7b223 !important;
-    background-color: #fff;
-  }
