@@ -17,6 +17,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./assets/css/nav-mobile.css" />
@@ -45,149 +46,93 @@
   </head>
   <body>
     <!--CAROUSEL PRINCIPAL COM 100VH-->
-    <section>
-      <div
-        id="mainCarousel"
-        class="carousel slide carousel-fade position-relative"
-        data-bs-ride="carousel"
-      >
-        <div class="w-100 header position-absolute">
-          <div class="logo position-relative z-index-2"></div>
+    <div
+    id="mainCarousel"
+    class="carousel slide carousel-fade position-relative"
+    data-bs-ride="carousel"
+  >
+    <div class="w-100 header position-absolute">
+      <div class="logo position-relative z-index-2"></div>
 
-          <nav class="navbar navbar-desktop navbar-expand-lg bg-dark position-relative z-index-2">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-10">
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >HOME</a
+      <nav class="navbar navbar-desktop navbar-expand-lg bg-dark position-relative z-index-2">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-10">
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >HOME</a
+                >
+              </li>
+              <li
+                class="nav-item dropdown bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover-dropdown"
+              >
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ROTEIROS
+                </a>
+                <ul class="dropdown-menu bg-gray p-0 btn-yellow-hover">
+                  <li class="btn-yellow-hover">
+                    <a class="dropdown-item text-light ps-2 pt-2" href="#"
+                      >L'ÉTAPE BRASIL</a
                     >
                   </li>
-                  <li
-                    class="nav-item dropdown bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover-dropdown"
-                  >
-                    <a
-                      class="nav-link dropdown-toggle text-light"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                  <li class="btn-yellow-hover">
+                    <a class="dropdown-item text-light ps-2" href="#"
+                      >SERRA CATARINENSE</a
                     >
-                      ROTEIROS
+                  </li>
+                  <li class="btn-yellow-hover">
+                    <a class="dropdown-item text-light ps-2 pb-1" href="#"
+                      >TRAVESSIA DOS ANDES
                     </a>
-                    <ul class="dropdown-menu bg-gray p-0 btn-yellow-hover">
-                      <li class="btn-yellow-hover">
-                        <a class="dropdown-item text-light ps-2 pt-2" href="#"
-                          >L'ÉTAPE BRASIL</a
-                        >
-                      </li>
-                      <li class="btn-yellow-hover">
-                        <a class="dropdown-item text-light ps-2" href="#"
-                          >SERRA CATARINENSE</a
-                        >
-                      </li>
-                      <li class="btn-yellow-hover">
-                        <a class="dropdown-item text-light ps-2 pb-1" href="#"
-                          >TRAVESSIA DOS ANDES
-                        </a>
-                      </li>
-                    </ul>
                   </li>
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >RDVCC</a
-                    >
-                  </li>
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >GALERIA</a
-                    >
-                  </li>
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >BLOG</a
-                    >
-                  </li>
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >SOBRE</a
-                    >
-                  </li>
-                  <li
-                    class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
-                  >
-                    <a class="nav-link text-light" aria-current="page" href="#"
-                      >CONTATO</a
-                    >
-                  </li>
-                  <ul
-                    class="nav-item social-medias-language position-absolute z-index-1 d-flex align-items-center gap-10"
-                  >
-                    <img
-                      role="button"
-                      class="icon-social-media bg-gray py-1 px-1"
-                      src="assets/images/instagram.svg"
-                      alt="Logo Instagram"
-                    />
-                    <img
-                      role="button"
-                      class="icon-social-media bg-gray py-1 px-1"
-                      src="assets/images/facebook.svg"
-                      alt="Logo Facebook"
-                    />
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle bg-gray border-0"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        style="padding: 3px 10px"
-                      >
-                        <img
-                          src="assets/images/brasil-icon.png"
-                          alt="Brasil"
-                          style="width: 30px"
-                        />
-                      </button>
-                      <ul
-                        class="dropdown-menu bg-gray"
-                        style="margin-left: -100px"
-                      >
-                        <li>
-                          <a class="dropdown-item text-light" href="#">
-                            <img
-                              src="assets/images/brasil-icon.png"
-                              alt="Brasil"
-                            />
-                            Portuguese BR
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item text-light" href="#">
-                            <img src="assets/images/usa.png" alt="USA" />
-                            English US
-                          </a>
-                        </li>
-                   </ul>
-                  </ul>
                 </ul>
-              </div>
-            </div>
-          </nav>
-
-          <nav class="navbar navbar-mobile navbar-dark">
-            <div class="container-fluid">
-              <ul class="nav d-flex gap-10 justify-content-start">
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >RDVCC</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >GALERIA</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >BLOG</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >SOBRE</a
+                >
+              </li>
+              <li
+                class="nav-item bg-gray ps-4 pe-4 rounded-bottom margin-top-10 color-yellow-hover"
+              >
+                <a class="nav-link text-light" aria-current="page" href="#"
+                  >CONTATO</a
+                >
+              </li>
+              <ul
+                class="nav-item social-medias-language position-absolute z-index-1 d-flex align-items-center gap-10" 
+              >
                 <img
                   role="button"
                   class="icon-social-media bg-gray py-1 px-1"
@@ -200,7 +145,7 @@
                   src="assets/images/facebook.svg"
                   alt="Logo Facebook"
                 />
-                <div class="dropdown">
+                <div class="dropdown-language-desktop">
                   <button
                     class="btn dropdown-toggle bg-gray border-0 text-light"
                     type="button"
@@ -214,15 +159,15 @@
                       style="width: 30px"
                     />
                   </button>
-                  <ul class="dropdown-menu bg-gray" style="margin-left: -100px">
-                    <li>
-                      <a class="dropdown-item text-light" href="#">
+                  <ul class="dropdown-menu bg-gray dropdown-language">
+                    <li class="color-yellow-hover">
+                      <a class="dropdown-item text-light text-white bg-gray" href="#">
                         <img src="assets/images/brasil-icon.png" alt="Brasil" />
                         Portuguese BR
                       </a>
                     </li>
-                    <li>
-                      <a class="dropdown-item text-light" href="#">
+                    <li class="color-yellow-hover">
+                      <a class="dropdown-item bg-gray text-white" href="#">
                         <img src="assets/images/usa.png" alt="USA" />
                         English US
                       </a>
@@ -230,264 +175,315 @@
                   </ul>
                 </div>
               </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-mobile navbar-dark">
+        <div class="container-fluid">
+          <ul class="nav d-flex gap-10 justify-content-start">
+            <img
+              role="button"
+              class="icon-social-media bg-gray py-1 px-1"
+              src="assets/images/instagram.svg"
+              alt="Logo Instagram"
+            />
+            <img
+              role="button"
+              class="icon-social-media bg-gray py-1 px-1"
+              src="assets/images/facebook.svg"
+              alt="Logo Facebook"
+            />
+            <div class="dropdown">
               <button
+                class="btn dropdown-toggle bg-gray border-0 text-light"
                 type="button"
-                style="background: transparent"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample"
-                onclick="changeIcon(this)"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 3px 10px"
               >
-                <i class="fa fa-bars"></i>
+                <img
+                  src="assets/images/brasil-icon.png"
+                  alt="Brasil"
+                  style="width: 30px"
+                />
               </button>
+              <ul class="dropdown-menu bg-gray dropdown-language" style="margin-left: -100px">
+                <li>
+                  <a class="dropdown-item text-light text-white" href="#">
+                    <img src="assets/images/brasil-icon.png" alt="Brasil" />
+                    Portuguese BR
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">
+                    <img src="assets/images/usa.png" alt="USA" />
+                    English US
+                  </a>
+                </li>
+              </ul>
             </div>
-          </nav>
-
-          <div
-            class="offcanvas offcanvas-start d-flex flex-column flex-shrink-0 bg-light"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-            style="max-width: 450px"
+          </ul>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            id="btn-menu"
+            style="background: transparent"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
           >
-            <a
-              href=""
-              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none logo-menu"
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+        </div>
+      </nav>
+      <div
+      class="offcanvas offcanvas-start d-flex flex-column flex-shrink-0 bg-ligh"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+      style="max-width: 450px"
+    >
+      <a
+        href=""
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none logo-menu"
+      >
+      </a>
+      <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >HOME</a
             >
+          </li>
+          <li class="nav-item dropdown dropdown-route color-yellow-hover">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ROTEIROS
             </a>
-            <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >HOME</a
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item text-dark" href="#"
+                  >L'ÉTAPE BRASIL</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-dark"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  ROTEIROS
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item text-dark" href="#"
-                      >L'ÉTAPE BRASIL</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-dark" href="#"
-                      >SERRA CATARINENSE</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-dark" href="#"
-                      >TRAVESSIA DOS ANDES</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >RDVCC</a
+              <li>
+                <a class="dropdown-item text-dark" href="#"
+                  >SERRA CATARINENSE</a
                 >
               </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >GALERIA</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >BLOG</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >SOBRE</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link text-dark" aria-current="page"
-                  >CONTATO</a
+              <li>
+                <a class="dropdown-item text-dark" href="#"
+                  >TRAVESSIA DOS ANDES</a
                 >
               </li>
             </ul>
-            <hr />
-            <ul class="nav-item d-flex gap-10 justify-content-end me-2">
-              <img
-                role="button"
-                class="icon-social-media bg-gray py-1 px-1"
-                src="assets/images/instagram.svg"
-                alt="Logo Instagram"
-              />
-              <img
-                role="button"
-                class="icon-social-media bg-gray py-1 px-1"
-                src="assets/images/facebook.svg"
-                alt="Logo Facebook"
-              />
-              <div class="dropdown">
-                <button
-                  class="btn dropdown-toggle bg-gray border-0 text-light"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  style="padding: 3px 10px"
-                >
-                  <img
-                    src="assets/images/brasil-icon.png"
-                    alt="Brasil"
-                    style="width: 30px"
-                  />
-                </button>
-                <ul class="dropdown-menu bg-gray" style="margin-left: -100px">
-                  <li>
-                    <a class="dropdown-item text-light" href="#">
-                      <img src="assets/images/brasil-icon.png" alt="Brasil" />
-                      Portuguese BR
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-light" href="#">
-                      <img src="assets/images/usa.png" alt="USA" />
-                      English US
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
-          </div>
+          </li>
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >RDVCC</a
+            >
+          </li>
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >GALERIA</a
+            >
+          </li>
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >BLOG</a
+            >
+          </li>
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >SOBRE</a
+            >
+          </li>
+          <li class="nav-item color-yellow-hover">
+            <a href="" class="nav-link text-dark" aria-current="page"
+              >CONTATO</a
+            >
+          </li>
+      </ul>
+      <hr />
+      <ul class="nav-item nav-icons d-flex gap-10 me-2" style="justify-content: end">
+        <img
+          role="button"
+          class="icon-social-media bg-gray py-1 px-1"
+          src="assets/images/instagram.svg"
+          alt="Logo Instagram"
+        />
+        <img
+          role="button"
+          class="icon-social-media bg-gray py-1 px-1"
+          src="assets/images/facebook.svg"
+          alt="Logo Facebook"
+        />
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle bg-gray border-0 text-light"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="padding: 3px 10px"
+          >
+            <img
+              src="assets/images/brasil-icon.png"
+              alt="Brasil"
+              style="width: 30px"
+            />
+          </button>
+          <ul class="dropdown-menu bg-gray  dropdown-language" style="margin-left: -100px">
+            <li>
+              <a class="dropdown-item text-light" href="#">
+                <img src="assets/images/brasil-icon.png" alt="Brasil" />
+                Portuguese BR
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-light" href="#">
+                <img src="assets/images/usa.png" alt="USA" />
+                English US
+              </a>
+            </li>
+          </ul>
         </div>
+      </ul>
+    </div>
+    </div>
 
-        <div class="carousel-inner">
-          <div
-            class="carousel-item w-100 active"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-1811-rdv-franca-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
-          <div
-            class="carousel-item w-100"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-3889-rdv-franca-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
-          <div
-            class="carousel-item w-100"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-6458-rdv-suica-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
-          <div
-            class="carousel-item w-100"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-7715-rdv-italia-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
-          <div
-            class="carousel-item w-100"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-8272-rdv-italia-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
-          <div
-            class="carousel-item w-100"
-            data-bs-interval="6000"
-            style="
-              background: url(assets/images/2022-8896-rdv-italia-web.jpg)
-                no-repeat center center;
-              height: 100vh;
-            "
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos molestiae veritatis
-              </p>
-            </div>
-          </div>
+    <div class="carousel-inner">
+      <div
+        class="carousel-item w-100 active"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-1811-rdv-franca-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
         </div>
-        <button
-          class="carousel-control-prev align-items-end"
-          type="button"
-          data-bs-target="#mainCarousel"
-          data-bs-slide="prev"
-          style="opacity: 1"
-        >
-          <img
-            class="bg-gray rounded-circle border border-2 border-white mb-2"
-            src="assets/images/arrow-left.png"
-            alt=""
-          />
-        </button>
-        <button
-          class="carousel-control-next align-items-end"
-          type="button"
-          data-bs-target="#mainCarousel"
-          data-bs-slide="next"
-          style="opacity: 1"
-        >
-          <img
-            class="bg-gray rounded-circle border border-2 border-white mb-2"
-            src="assets/images/arrow-right.png"
-            alt=""
-          />
-        </button>
       </div>
-    </section>
+      <div
+        class="carousel-item w-100"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-3889-rdv-franca-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-item w-100"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-6458-rdv-suica-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-item w-100"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-7715-rdv-italia-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-item w-100"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-8272-rdv-italia-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-item w-100"
+        data-bs-interval="6000"
+        style="
+          background: url(assets/images/2022-8896-rdv-italia-web.jpg)
+            no-repeat center center;
+          height: 100vh;
+        "
+      >
+        <div class="carousel-caption d-none d-md-block">
+          <p class="bg-gray-alpha fw-bold mb-0 fs-4 pb-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos molestiae veritatis
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev align-items-end"
+      type="button"
+      data-bs-target="#mainCarousel"
+      data-bs-slide="prev"
+      style="opacity: 1"
+    >
+      <img
+        class="bg-gray rounded-circle border border-2 border-white mb-2"
+        src="assets/images/arrow-left.png"
+        alt=""
+      />
+    </button>
+    <button
+      class="carousel-control-next align-items-end"
+      type="button"
+      data-bs-target="#mainCarousel"
+      data-bs-slide="next"
+      style="opacity: 1"
+    >
+      <img
+        class="bg-gray rounded-circle border border-2 border-white mb-2"
+        src="assets/images/arrow-right.png"
+        alt=""
+      />
+    </button>
+    </div>
 
     <!--CONTEUDO COM PATROCINADORES E CARD CAROUSEL-->
     <main>
@@ -640,5 +636,6 @@
     ></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/carouselCard.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
