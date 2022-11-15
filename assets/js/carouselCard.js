@@ -1,37 +1,26 @@
-const controls = document.querySelectorAll(".control");
-      const gallery = document.querySelector(".gallery");
-      let currentItem = 1;
-      const items = document.querySelectorAll(".item");
-      const maxItems = items.length;
-
-      controls.forEach((control) => {
-        control.addEventListener("click", (e) => {
-          isLeft = e.target.classList.contains("arrow-left");
-
-          if (isLeft) {
-            currentItem -= 1;
-            gallery.style.justifyContent = "flex-start"
-          } else {
-            currentItem += 1;
-          }
-
-          if (currentItem >= maxItems) {
-            currentItem = 0;
-          }
-
-          if (currentItem < 0) {
-            currentItem = maxItems - 1;
-          }
-
-          items.forEach(item => {
-            item.classList.remove("current-item");
-          });
-
-          items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center",
-          });
-
-          items[currentItem].classList.add("current-item");
-        });
-      });
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    center: true,
+    navText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      800: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+});

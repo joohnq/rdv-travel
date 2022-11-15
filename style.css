@@ -190,7 +190,7 @@ button.dropdown-toggle::after {
   }
 
   .logo{
-    grid-area: logo;
+    grid-area: logo;;
   }
 
   .navbar-desktop{
