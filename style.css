@@ -195,8 +195,8 @@
     background-color: #fff !important;
   }
 
-  .dropdown-route.show{
-  margin-bottom: 120px;
+  .dropdown-route .dropdown-toggle.show{
+  margin-bottom: 120px !important;
   }
 
   .dropdown-route li a{
@@ -211,6 +211,15 @@
   background: #333333 !important;
   color: #e7b223 !important;
 }
+}
+
+@media (max-width: 768px) {
+  .logo{
+    background: url('./assets/images/logo-mobile.png') no-repeat center;
+    height: 300px;
+    width: 100%;
+    margin-top: -50px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -239,4 +248,26 @@
   .slider-card button{
     padding: 5px 20px !important;
   }  
+}
+
+@media (max-width: 300px) {
+  html{
+    margin: 0 auto !important;
+  }
+
+  body{
+    padding-right: 0 !important;
+  }
+
+  .logo{
+    background: url('./assets/images/logo-small.png') no-repeat center;
+    height: 250px;
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .offcanvas{
+    width: 60% !important;
+    height: 100vh;
+  }
 }
