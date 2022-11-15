@@ -45,6 +45,10 @@ button.dropdown-toggle::after {
   z-index: 2;
 }
 
+.navbar-desktop{
+  height: 30px;
+}
+
 .logo {
   background: url("./assets/images/logo.png") no-repeat center center;
   background-size: cover;
@@ -168,25 +172,11 @@ button.dropdown-toggle::after {
 }
 
 @media (max-width: 1100px) {
-  .header {
-    display: grid !important;
-    grid-template:
-      "menu-mobile"
-      "logo";
-  }
-
   .navbar-mobile{
-    grid-area: menu;
+    grid-area: menu-mobile;
     background: transparent !important;
-    margin: 20px 20px 0 0;
-  }
-
-  .navbar-toggler{
-    background-color: #fff !important; 
-  }
-
-  .container-fluid{
-    justify-content: flex-end !important;
+    position: relative;
+    z-index: 2;
   }
 
   .logo{
