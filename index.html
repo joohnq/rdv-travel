@@ -19,6 +19,27 @@
     />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
+
+    <!--OWL CAROUSEL-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/owlCarousel.css"
+    />
+
     <title>RSV | Travel</title>
   </head>
   <body>
@@ -144,15 +165,18 @@
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
-                        style="padding: 3px 10px;"
+                        style="padding: 3px 10px"
                       >
                         <img
                           src="assets/images/brasil-icon.png"
                           alt="Brasil"
-                          style="width: 30px;"
+                          style="width: 30px"
                         />
                       </button>
-                      <ul class="dropdown-menu bg-gray" style="margin-left: -100px">
+                      <ul
+                        class="dropdown-menu bg-gray"
+                        style="margin-left: -100px"
+                      >
                         <li>
                           <a class="dropdown-item text-light" href="#">
                             <img
@@ -320,107 +344,64 @@
         <h2 class="text-center text text-uppercase fs-4 pt-3 pb-3">
           Nossos Roteiros
         </h2>
-        <div class="container-carousel position-relative w-100 mx-auto">
-          <button aria-label="Previous image">
-            <img
-              class="arrow-left control"
-              src="assets/images/arrow-left.png"
-              alt=""
-            />
-          </button>
-          <button aria-label="Next Image">
-            <img
-              class="arrow-right control"
-              src="assets/images/arrow-right.png"
-              alt=""
-            />
-          </button>
-          <div class="gallery-wrapper">
-            <div class="gallery">
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto item"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+        <section id="slider" class="pt-1">
+          <div class="container">
+            <div class="slider">
+              <div class="owl-carousel">
+                <div class="slider-card">
+                  <header>
+                    <h5 class="card-title text-center text-uppercase">
+                      Experience
+                    </h5>
+                  </header>
+                  <img
+                    src="assets/images/2022-3889-rdv-franca-web.jpg"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <p class="card-text text-start">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
 
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
+                    <button
+                      class="border border-dark rounded-pill py-1 px-5 bg-light"
                     >
-                  </button>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >Saiba mais</a
+                      >
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto item current-item"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                <div class="slider-card">
+                  <header>
+                    <h5 class="card-title text-center text-uppercase">
+                      Experience
+                    </h5>
+                  </header>
+                  <img
+                    src="assets/images/2022-3889-rdv-franca-web.jpg"
+                    alt="..."
+                  />
+                  <div class="card-body text-center">
+                    <p class="card-text text-start">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
 
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
+                    <button
+                      class="border border-dark rounded-pill py-1 px-5 bg-light"
                     >
-                  </button>
-                </div>
-              </div>
-              <div
-                class="card rounded-0 border-0 bg-gray-light pt-2 ps-3 pe-3 mx-auto item"
-              >
-                <header>
-                  <h5 class="card-title text-center text-uppercase">
-                    Experience
-                  </h5>
-                </header>
-                <img
-                  src="assets/images/2022-3889-rdv-franca-web.jpg"
-                  alt="..."
-                />
-                <div class="card-body text-center">
-                  <p class="card-text text-start">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-
-                  <button
-                    class="border border-dark rounded-pill py-1 px-5 bg-light"
-                  >
-                    <a href="#" class="text-decoration-none text-dark"
-                      >Saiba mais</a
-                    >
-                  </button>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >Saiba mais</a
+                      >
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
 
@@ -485,5 +466,12 @@
     <!-- JavaScript -->
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/carouselCard.js"></script>
+
+    <!--OWL CAROUSEL-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
